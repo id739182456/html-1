@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>3.17from标签概括</title>
+	</head>
+	<body>
+		<h1>from标签的大概用法</h1>
+		<h2></h2>
+		<form method="post" action="save.php">
+			<label for="username">用户名</label>
+			<input type="text" name="username" id="username" value=""/>
+			<label for="pass">密码</label>
+			<input type="password" name="pass" id="pass" value=""/>
+			<input type="submit" value="确定" name="submit"/>
+			<input type="reset" value="重置" name="reset"/>
+		</form>
+		<h2>文本框和文本框的行，竖</h2>
+		<from method="post" action="save.php">
+			<label for="personal-profile">个人简介</label>
+			<textarea cols="50" rows="5" id="personal-profile">输入内容</textarea>
+			<input type="submit" value="确定" name="submit"/>
+			<input type="reset" value="重置" name="reset"/>
+		</form>	
+		<h2>单选框，复选框</h2>
+		<from method="post" action="save.php">
+			<label for="male">男</label>
+			<input type="radio" value="1" name="gender" checked="checked" id="male"/>
+			<label for="female">女</label>
+			<input type="radio" value="2" name="gender" id="female"/>
+			<br/><br/>你是否喜欢的搞基
+			<br/>
+			<input type="radio" value="喜欢" name="radiolove" checked="checked"/>喜欢
+			<input type="radio" value="不喜欢" name="radiolove"/>不喜欢
+			<input type="radio" value="无所谓" name="radiolove"/>无所谓
+			<br/><br/>你对哪些运动感兴趣<br/>
+			<input type="checkbox" value="篮球" name="checkbox1"/>篮球
+			<input type="checkbox" value="足球" name="checkbox2"/>足球
+			<input type="checkbox" value="游泳" name="checkbox3" checked="checked"/>游泳
+			<input type="checkbox" value="羽毛球" name="checkbox4" checked="checked"/>羽毛球
+		</from>
+		<h2>下拉列表框+下拉列表框多选</h2>
+		<form method="post" action="save.php">
+			<label for="love">爱好</lable>
+			<select id="love">
+				<option value="看书">看书</option>
+				<option value="看什么书" selected="selected">看什么书</option>
+				<option value="看什么鬼书">看什么鬼书</option>
+			</select><br/><br/>
+			<label for="notlove">不爱好(multiple是多重的意思）</label>
+			<select multiple="multiple" id="notlove">
+				<option value="123">123</option>
+				<option value="1234" selected="selected">1234</option>
+				<option value="12345">12345</option>
+			</select>
+		</form>
+	</body>
+</html>
